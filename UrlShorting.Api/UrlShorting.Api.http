@@ -1,0 +1,16 @@
+@UrlShorting.Api_HostAddress = https://localhost:7065
+@UrlShortener_Distributed_Aspire_HostAddress = http://localhost:5205
+
+@url=https://www.adiq.com.br
+POST {{UrlShorting.Api_HostAddress}}/shorten?url={{url}}
+
+###
+
+GET {{UrlShorting.Api_HostAddress}}/urls
+
+###
+
+@shortCode=9zV0q8n
+GET {{UrlShorting.Api_HostAddress}}/{{shortCode}}
+
+###
